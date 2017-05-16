@@ -1,13 +1,34 @@
+.HeaderParent {
+    display: flex;
+}
+
 .Header {
     display: flex;
+    flex: 9;
     height: 10vh;
     background: #03A9F4;
     justify-content: center;
-    align-items:center;
+    align-items: center;
 }
 
 .Heading {
     color: white;
-    font-family: Raleway, serif, monospace;
     font-size: 1.5em;
+}
+
+.AddContact {
+    display: flex;
+    flex: 1;
+    background: #03A9F4;
+    justify-content: center;
+    align-items: center;
+}
+
+.AddContact button{
+    background: #1A237E;
+    box-shadow: 2px 2px 5px #000000;
+    border:none;
+    color:white;
+    font-size: 0.7m;
+    padding: 1em;
 }
