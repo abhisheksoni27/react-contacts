@@ -1,0 +1,18 @@
+.Row{
+    display: flex;
+    padding: 1em;
+}
+
+.Index{
+    flex:1;
+}
+
+.Name{
+    flex:2;
+
+}
+
+.MobileNumber{
+    flex:2;
+
+}

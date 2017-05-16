@@ -3,7 +3,7 @@ import React, {Component} from 'react';
 import Header from './Header';
 import ListOfContacts from './ListOfContacts';
 
-class Contact extends React.Component {
+class Contact extends Component {
     render() {
         return (
             <div>

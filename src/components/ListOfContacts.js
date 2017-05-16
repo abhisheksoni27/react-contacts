@@ -1,12 +1,13 @@
 import React, { Component } from 'react';
 import List from './List';
+import KeyList from './KeyList';
 
-
-
-class ListOfContacts extends React.Component{
+class ListOfContacts extends Component{
     render(){
-        return(
+        return(<div>
+            <KeyList />
             <List />
+            </div>
         );
     }
 }

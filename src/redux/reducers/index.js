@@ -1,4 +1,4 @@
-import {addContactsReducer} from './addContactsReducer';
+import addContacts from './addContactsReducer';
 
 import {combineReducers} from 'redux';
 
