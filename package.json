@@ -13,7 +13,6 @@
     "redux-logger": "^3.0.1",
     "react-scripts": "0.9.5"
   },
-  "homepage": "http://abhisheksoni27.github.io/react-contacts",
   "scripts": {
     "start": "react-scripts start",
     "build": "react-scripts build",
