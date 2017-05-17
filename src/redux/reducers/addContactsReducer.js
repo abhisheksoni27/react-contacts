@@ -1,12 +1,12 @@
-const initialState = {
-    list: []
-}
+let initialState = [];
 
 export default function reducer(state = initialState, action) {
-    if (typeof state === 'undefined') {
-        return initialState;
+    console.log(state);
+    if (action.type === 'ADD_TO_CONTACTS') {
+
+        state= state.concat(action.detailsObject);
+        return state;
     }
 
-    state['list'] = state['list'].concat(action.detailsObject);
     return state;
 }

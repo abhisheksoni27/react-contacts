@@ -1,7 +1,9 @@
-export function addContacts(index, detailsObject){
+let index = 0;
+
+export default function addContacts(detailsObject){
     let data = {
         type: 'ADD_TO_CONTACTS',
-        payload: index,
+        payload: index++,
         detailsObject: detailsObject
     };
     return data;
