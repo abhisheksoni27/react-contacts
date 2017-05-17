@@ -6,7 +6,6 @@
     height: 100vh;
     flex-direction: column;
     font-size: 2em;
-    background: #B2EBF2
 }
 
 .AddContactContainer>h1 {
@@ -26,7 +25,7 @@
     margin: 0.6em 0em;
     align-self: flex-start;
     font-size: 0.6em;
-    color: #03A9F4;
+    color: #0097A7;
 }
 
 #mobile, #name{
@@ -34,12 +33,8 @@
     padding:1em;
 }
 
-#mobile::placeholder {
-    color: #BBDEFB;
-}
-
-#name::placeholder {
-    color: #FFECB3;
+#mobile::placeholder, #name::placeholder{
+    color: #B0BEC5;
 }
 
 #submitAddContact {
@@ -47,17 +42,21 @@
     padding: 1em;
     margin: 0.6em;
     font-size: 1em;
-    background: #607D8B;
+    background:#F44336;
     color: white;
+    transition-property: padding background;
+    transition: 0.2s ease-in-out;
 }
 
 #submitAddContact:hover {
-    background: #607;
-    transition: 0.4s ease-in;
+    background: #D32F2F;
 }
 
 #submitAddContact:active {
     padding: 1.1em;
-    transition-property: padding background;
-    transition: 0.2s ease-in;
+}
+
+.FormContainer h2{
+    color:#FFC107;
+    margin-bottom: 0.5em;
 }

@@ -6,7 +6,7 @@
     display: flex;
     flex: 9;
     height: 10vh;
-    background: #03A9F4;
+    background: #FFC107;
     justify-content: center;
     align-items: center;
 }
@@ -19,16 +19,20 @@
 .AddContact {
     display: flex;
     flex: 1;
-    background: #03A9F4;
+    background: #FFC107;
     justify-content: center;
     align-items: center;
 }
 
 .AddContact button{
-    background: #1A237E;
-    box-shadow: 2px 2px 5px #000000;
+    background: #F44336;
+    box-shadow: 1px 1px 2px #777777;
     border:none;
-    color:white;
     font-size: 0.7m;
     padding: 1em;
+}
+
+.AddContact button a{
+    color:white;
+    text-decoration: none;
 }

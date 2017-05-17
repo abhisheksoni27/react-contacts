@@ -53,18 +53,19 @@ class AddContact extends Component {
         return (
             <div className='FormContainer'>
             
-            <h2>Add</h2>
+                <h2>Add</h2>
             
-            <form onSubmit={this.handleSubmit} className='ContactForm'>
-                
-                <label htmlFor='name' className='namelabel'>Name</label>
-                <input type="text" id='name' placeholder='Harry Potter' autoComplete={true} max='25' min='1' value={this.state.name} onChange={this.handleChange} required/>
-                
-                <label htmlFor='mobile' className='mobilelabel' >Mobile Number</label>
-                <input type="tel" id='mobile' placeholder='+91-XXX-XXX-XXX' autoComplete={true} value={this.state.phoneNumber} onChange={this.handleChange} required/>
+                <form onSubmit={this.handleSubmit} className='ContactForm'>
+                    
+                    <label htmlFor='name' className='namelabel'>Name</label>
+                    <input type="text" id='name' placeholder='Harry Potter' autoComplete={true} max='25' min='1' value={this.state.name} onChange={this.handleChange} required/>
+                    
+                    <label htmlFor='mobile' className='mobilelabel' >Mobile Number</label>
+                    <input type="tel" id='mobile' placeholder='+91-XXX-XXX-XXX' autoComplete={true} value={this.state.phoneNumber} onChange={this.handleChange} required/>
 
-                <input type="submit" id='submitAddContact' value="Add Contact" />
-            </form>
+                    <input type="submit" id='submitAddContact' value="Add Contact" />
+                
+                </form>
             
             </div>
         );
