@@ -48,6 +48,8 @@
     transition: 0.2s ease-in-out;
 }
 
+/* Because no ripple here */
+
 #submitAddContact:hover {
     background: #D32F2F;
 }
