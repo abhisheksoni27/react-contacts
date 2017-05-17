@@ -4,9 +4,9 @@ class List extends Component {
     render() {
         return (
             <div className="Row">
-                <div className="Index">1</div>
-                <div className="Name">Abhishek</div>
-                <div className="MobileNumber">+919999999999</div>
+                <div className="Index">{this.props.value.index}</div>
+                <div className="Name">{this.props.value.name}</div>
+                <div className="MobileNumber">{this.props.value.phoneNumber}</div>
             </div>
         );
     }

@@ -6,9 +6,7 @@ import {
 
 import addContacts from '../redux/actions/contactActions.js';
 
-function mapStateToProps(state) {
-  return { list: state };
-}
+import mapStateToProps from '../util/mapStateToProps.js';
 
 
 class AddContact extends Component {
@@ -19,7 +17,6 @@ class AddContact extends Component {
              name: '',
              phoneNumber:''
          };
-         console.log(this.props);
          this.handleChange = this.handleChange.bind(this);
          this.handleSubmit = this.handleSubmit.bind(this);
      }
@@ -42,15 +39,16 @@ class AddContact extends Component {
          let newContact = {
 
              name: this.state.name,
-             phoneNumber: this.state.phoneNumber
+             phoneNumber: this.state.phoneNumber,
+             index:this.props.list.length++
 
-         }
+         };
          
          let {dispatch} = this.props;
 
          dispatch(addContacts(newContact));
 
-         this.props.router.goBack();
+         this.props.router.push('/');
      }
 
     render() {
