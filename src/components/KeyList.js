@@ -11,6 +11,8 @@ class List extends Component {
                 <div className="IndexHeader">#</div>
                 <div className="NameHeader">Name</div>
                 <div className="MobileNumberHeader">Mobile Number</div>
+                <div className="EmailHeader">Email</div>
+                <div className="OtherInfoHeader">Other Information</div>                
             </div>
         );
     }

@@ -20,8 +20,10 @@
     align-items: center;
 }
 
-.namelabel,
-.mobilelabel {
+.nameLabel,
+.mobileLabel,
+.otherInfoLabel,
+.emailLabel {
     margin: 0.6em 0em;
     align-self: flex-start;
     font-size: 0.6em;
@@ -29,13 +31,17 @@
 }
 
 #mobile,
-#name {
+#name,
+#otherInfo,
+#email {
     width: 100%;
     padding: 1em;
 }
 
 #mobile::placeholder,
-#name::placeholder {
+#name::placeholder,
+#otherInfo::placeholder,
+#email::placeholder {
     color: #B0BEC5;
 }
 

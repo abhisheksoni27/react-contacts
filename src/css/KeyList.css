@@ -1,7 +1,7 @@
 .Row {
     display: flex;
     padding: 1em;
-    border-bottom: 0.1em solid #efefef;
+    box-shadow: 1px 1px 1px #efefef;
 }
 
 .Index,
@@ -9,23 +9,42 @@
     flex: 1;
 }
 
+.Index::after{
+    color:khaki;
+
+    content: '_';
+}
+
 .Name,
 .NameHeader {
     flex: 2;
 }
 
-.MobileNumber,
-.MobileNumberHeader {
-    flex: 7;
+.Email,
+.EmailHeader {
+    flex: 3;
 }
 
-.Index,.MobileNumber,.Name{
+.MobileNumber,
+.MobileNumberHeader {
+    flex: 2;
+}
+
+.OtherInfo,
+.OtherInfoHeader {
+    flex: 2;
+}
+
+.Index,
+.MobileNumber,
+.Name {
     font-weight: 300;
-    
 }
 
 .IndexHeader,
 .MobileNumberHeader,
-.NameHeader {
+.NameHeader,
+.EmailHeader,
+.OtherInfoHeader {
     font-weight: 700;
 }

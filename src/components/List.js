@@ -10,10 +10,12 @@ function formatPhoneNumbers(number) {
 class List extends Component {
     render() {
         return (
-            <div className="Row">
+            <div className="Row" style={{background:this.props.value.background}}>
                 <div className="Index">{this.props.value.index}</div>
                 <div className="Name">{this.props.value.name}</div>
                 <div className="MobileNumber">{formatPhoneNumbers(this.props.value.phoneNumber)}</div>
+                <div className="Email">{this.props.value.email}</div>
+                <div className="OtherInfo">{this.props.value.otherInfo}</div>
             </div>
         );
     }
