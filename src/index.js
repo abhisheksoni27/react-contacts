@@ -12,6 +12,5 @@ ReactDOM.render(
   <Router history={browserHistory}> 
     <Route path="/" component={App}/>
     <Route path="/add-contact" component={AddContact}/>
-    
   </Router>
 </Provider>, document.getElementById('root'));
