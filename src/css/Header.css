@@ -25,28 +25,28 @@
     align-items: center;
 }
 
-.AddContact button{
+.AddContact button {
     position: absolute;
     bottom: 4vh;
-    right:2vw;
-    height:50px;
-    width:50px;
+    right: 2vw;
+    height: 50px;
+    width: 50px;
     background: #F44336;
     box-shadow: 1px 1px 2px #777777;
-    border:none;
+    border: none;
     transition: background 0.4s ease-in-out;
     border-radius: 40px;
-    padding:10px
-}
-.AddContact button:hover{
-    background: #000;
+    padding: 10px
 }
 
+.AddContact button:hover {
+    background: #FFC107;
+}
 
-.AddContact button a{
-    color:white;
-    padding:none;
-    margin:none;
+.AddContact button a {
+    color: white;
+    padding: none;
+    margin: none;
     font-size: 2em;
     text-decoration: none;
 }
