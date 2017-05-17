@@ -40,14 +40,12 @@ class AddContact extends Component {
 
              name: this.state.name,
              phoneNumber: this.state.phoneNumber,
-             index:this.props.list.length++
+             index:this.props.list.length + 1
 
          };
          
          let {dispatch} = this.props;
-
-         dispatch(addContacts(newContact));
-
+         dispatch(addContacts(newContact));         
          this.props.router.push('/');
      }
 
