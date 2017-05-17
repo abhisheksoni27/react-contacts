@@ -19,7 +19,7 @@ This will start the project in `development` mode.
 3. If you want to deploy it to GitHub Pages because you have made some flabbargasting changes and now can't wait to share it with the world, go to your terminal and run
 
 ```bash
-$ sudo yarn build
+$ sudo yarn run build
 ```
 
 This will generate the build folder which can be deployed to any static hosting provider. (**_Hint:_** GitHub, Bro! Don't tell anyone.)
