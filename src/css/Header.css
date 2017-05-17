@@ -5,7 +5,7 @@
 .Header {
     display: flex;
     flex: 9;
-    height: 10vh;
+    height: 8vh;
     background: #FFC107;
     justify-content: center;
     align-items: center;
@@ -14,6 +14,7 @@
 .Heading {
     color: white;
     font-size: 1.5em;
+    font-weight: 100;
 }
 
 .AddContact {
@@ -25,14 +26,27 @@
 }
 
 .AddContact button{
+    position: absolute;
+    bottom: 4vh;
+    right:2vw;
+    height:50px;
+    width:50px;
     background: #F44336;
     box-shadow: 1px 1px 2px #777777;
     border:none;
-    font-size: 0.7m;
-    padding: 1em;
+    transition: background 0.4s ease-in-out;
+    border-radius: 40px;
+    padding:10px
 }
+.AddContact button:hover{
+    background: #000;
+}
+
 
 .AddContact button a{
     color:white;
+    padding:none;
+    margin:none;
+    font-size: 2em;
     text-decoration: none;
 }

@@ -14,7 +14,7 @@ class Header extends Component {
 
                     </header>
                     <div className='AddContact'>
-                        <button><Link className="Link" to="/add-contact">Add Contact</Link></button>
+                        <button><Link className="Link" to="/add-contact">+</Link></button>
                     </div>
                 </div>
         );
