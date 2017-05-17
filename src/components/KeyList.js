@@ -5,9 +5,9 @@ class List extends Component {
     render() {
         return (
             <div className="Row">
-                <div className="Index">S. No.</div>
-                <div className="Name">Name</div>
-                <div className="MobileNumber">Mobile Number</div>
+                <div className="IndexHeader">#</div>
+                <div className="NameHeader">Name</div>
+                <div className="MobileNumberHeader">Mobile Number</div>
             </div>
         );
     }
