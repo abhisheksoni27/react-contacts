@@ -14,15 +14,12 @@ class AddContact extends Component {
             name: '',
             phoneNumber: ''
         };
-        this.handleChange = this
-            .handleChange
-            .bind(this);
-        this.handleSubmit = this
-            .handleSubmit
-            .bind(this);
+        this.handleChange = this.handleChange.bind(this);
+        this.handleSubmit = this.handleSubmit.bind(this);
     }
 
     handleChange(event) {
+        // Check to see which field changed
         if (event.target.id === 'name') {
             this.setState({name: event.target.value});
         } else {
@@ -32,7 +29,8 @@ class AddContact extends Component {
 
     handleSubmit(event) {
         event.preventDefault();
-
+        
+        // The New Contact Object
         let newContact = {
 
             name: this.state.name,
@@ -42,11 +40,13 @@ class AddContact extends Component {
         };
 
         let {dispatch} = this.props;
+        
+        // Send event to Redux Reducer
         dispatch(addContacts(newContact));
-        this
-            .props
-            .router
-            .push('/');
+
+        // Going back to the Home (display contacts) page
+        // Could also use this.props.rotuer.goBack();
+        this.props.router.push('/');
     }
 
     render() {
