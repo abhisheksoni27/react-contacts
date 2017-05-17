@@ -10,6 +10,7 @@ class ListOfContacts extends Component{
     render(){
         return(<div>
             <KeyList />
+            {/* Mapping each item so that it has it's own List element */}
             {this.props.list.map(listItem=>{
                 return <List key={listItem.index} value={listItem}/>
             })}

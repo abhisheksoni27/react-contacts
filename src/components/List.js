@@ -1,8 +1,10 @@
 import React, {Component} from 'react';
 
-function formatPhoneNumbers(number){
-  let matches = number.match(/\+(\d{2})(\d{3})(\d{3})(\d{4})$/);
-  return (!matches) ? null : "(+" + matches[1] + ") " + matches[2] + "-" + matches[3] + "-" + matches[4];
+function formatPhoneNumbers(number) {
+    // Check if input number is of the form (+CN) XXX-XXX-XXX
+    // CN: Two-Digit Country Code
+    let matches = number.match(/\+(\d{2})(\d{3})(\d{3})(\d{4})$/);
+    return (!matches) ? number : "(+" + matches[1] + ") " + matches[2] + "-" + matches[3] + "-" + matches[4];
 }
 
 class List extends Component {

@@ -10,6 +10,8 @@ class AddContact extends Component {
 
     constructor(props) {
         super(props);
+        
+        // Internal State to handle Input
         this.state = {
             name: '',
             phoneNumber: ''

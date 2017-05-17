@@ -1,3 +1,6 @@
+// Could be directly added to Redux's initial State and 
+// have its own style but it has been hardcoded for now.
+
 import React, {Component} from 'react';
 import '../css/KeyList.css';
 
