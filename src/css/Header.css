@@ -20,15 +20,15 @@
     height: 50px;
     width: 50px;
     background: #F44336;
-    box-shadow: 1px 1px 2px #777777;
+    box-shadow: 0px 2px 6px #777777;
     border: none;
-    transition: background 0.4s ease-in-out;
+    transition: box-shadow 0.2s ease-in-out;
     border-radius: 40px;
     padding: 10px
 }
 
 .AddContact:hover {
-    background: #FFC107;
+    box-shadow: 0px 8px 12px #777777;
 }
 
 .AddContact a {
