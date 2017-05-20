@@ -1,23 +1,98 @@
 const COLORS = [
-  { name: 'red', hex: '#F44336'},
-  { name: 'pink', hex: '#E91E63'},
-  { name: 'purple', hex: '#9C27B0'},
-  { name: 'deeppurple', hex: '#673AB7'},
-  { name: 'indigo', hex: '#3F51B5'},
-  { name: 'blue', hex: '#2196F3'},
-  { name: 'lightblue', hex: '#03A9F4'},
-  { name: 'cyan', hex: '#00BCD4'},
-  { name: 'teal', hex: '#009688'},
-  { name: 'green', hex: '#4CAF50'},
-  { name: 'lightgreen', hex: '#8BC34A'},
-  { name: 'lime', hex: '#CDDC39'},
-  { name: 'yellow', hex: '#FFEB3B'},
-  { name: 'amber', hex: '#FFC107'},
-  { name: 'orange', hex: '#FF9800'},
-  { name: 'deeporange', hex: '#FF5722'},
-];
+    {
+        "name": "red",
+        "hex": "#F44336",
+        "font": "#fff"
+    },
+    {
+        "name": "pink",
+        "hex": "#E91E63",
+        "font": "#fff"
+    },
+    {
+        "name": "purple",
+        "hex": "#9C27B0",
+        "font": "#fff"
+    },
+    {
+        "name": "deeppurple",
+        "hex": "#673AB7",
+        "font": "#fff"
+    },
+    {
+        "name": "indigo",
+        "hex": "#3F51B5",
+        "font": "#fff"
+    },
+    {
+        "name": "blue",
+        "hex": "#2196F3",
+        "font": "#fff"
+    },
+    {
+        "name": "lightblue",
+        "hex": "#03A9F4",
+        "font": "#fff"
+    },
+    {
+        "name": "cyan",
+        "hex": "#00BCD4",
+        "font": "#fff"
+    },
+    {
+        "name": "teal",
+        "hex": "#009688",
+        "font": "#fff"
+    },
+    {
+        "name": "green",
+        "hex": "#4CAF50",
+        "font": "#fff"
+    },
+    {
+        "name": "lightgreen",
+        "hex": "#8BC34A",
+        "font": "#000"
+    },
+    {
+        "name": "lime",
+        "hex": "#CDDC39",
+        "font": "#000"
+    },
+    {
+        "name": "yellow",
+        "hex": "#FFEB3B",
+        "font": "#000"
+    },
+    {
+        "name": "amber",
+        "hex": "#FFC107",
+        "font": "#000"
+    },
+    {
+        "name": "orange",
+        "hex": "#FF9800",
+        "font": "#000"
+    },
+    {
+        "name": "deeporange",
+        "hex": "#FF5722",
+        "font": "#fff"
+    }
+]
 
-export default function getRandomColor() {
-    let randomInt = Math.floor(Math.random() * COLORS.length);
-    return COLORS[randomInt].hex;
+export function getRandomColor() {
+  let randomInt = Math.floor(Math.random() * COLORS.length);
+  return COLORS[randomInt].hex;
+  
+}
+
+export function getFontColor(c) {
+  let font = '';
+  COLORS.forEach((color)=>{
+    if(color.hex === c){
+      font = color.font;
+    }
+  })
+  return font;
 }

@@ -6,7 +6,7 @@ import addContacts from '../redux/actions/contactActions.js';
 
 import mapStateToProps from '../util/mapStateToProps.js';
 
-import getRandomColor from '../util/color.js';
+import {getRandomColor, getFontColor} from '../util/color.js';
 
 class AddContact extends Component {
 
@@ -59,6 +59,9 @@ class AddContact extends Component {
     handleSubmit(event) {
         event.preventDefault();
 
+        let newBackground = getRandomColor();
+        let newFontColor = getFontColor(newBackground);
+
         // The New Contact Object
         let newContact = {
 
@@ -67,7 +70,8 @@ class AddContact extends Component {
             email: this.state.email,
             otherInfo: this.state.otherInfo,
             index: this.props.list.length + 1,
-            background: getRandomColor()
+            background: getRandomColor(),
+            font:newFontColor
 
         };
 
