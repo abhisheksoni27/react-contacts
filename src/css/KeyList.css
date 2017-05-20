@@ -2,6 +2,7 @@
     display: flex;
     padding: 1em;
     box-shadow: 1px 1px 1px #efefef;
+    font-family: monospace;
 }
 
 .Index,
@@ -46,5 +47,5 @@
 .NameHeader,
 .EmailHeader,
 .OtherInfoHeader {
-    font-weight: 700;
+    font-style: italic;
 }

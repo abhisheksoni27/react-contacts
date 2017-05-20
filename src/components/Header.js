@@ -5,18 +5,16 @@ import {Link} from 'react-router';
 
 class Header extends Component {
     render() {
-        return (
-                <div className='HeaderParent'>
+        return (<div>
                     <header className='Header'>
                         <h4 className='Heading'>
                             Contacts
                         </h4>
 
                     </header>
-                    <div className='AddContact'>
-                        <button><Link className="Link" to="/add-contact">+</Link></button>
+
+                        <button className="AddContact"><Link to="/add-contact">+</Link></button>
                     </div>
-                </div>
         );
     }
 }
